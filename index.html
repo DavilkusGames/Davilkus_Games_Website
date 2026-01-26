@@ -586,7 +586,7 @@
     <footer class="bg-header border-t border-line">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
             <div>
-                <div class="text-base md:text-lg">© 2025 Davilkus Games</div>
+                <div class="text-base md:text-lg">© <span id="current-year"></span> Davilkus Games</div>
                 <div class="mt-2 flex items-center gap-4 text-xs"><a href="/privacy-policy/" class="opacity-60 hover:opacity-80 transition">Privacy Policy</a><a href="/cookie-policy/" class="opacity-60 hover:opacity-80 transition">Cookie Policy</a></div>
             </div>
             <div class="flex items-center gap-5">
@@ -926,6 +926,12 @@
                     }
                 }
             })();
+
+            /* Current Year in Copyright */
+            const yearElement = document.getElementById('current-year');
+            if (yearElement) {
+                yearElement.textContent = new Date().getFullYear();
+            }
 
            /* --- Cookie Bar --- */
            function initCookieBar() { 
