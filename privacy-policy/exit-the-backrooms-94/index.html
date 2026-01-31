@@ -128,7 +128,7 @@
           <!-- Sticky Sidebar -->
           <aside class="md:col-span-3">
             <div class="sticky-col">
-              <h2 class="text-sm font-semibold text-brand mb-1">Exit the Backrooms: Level 94</h2>
+              <h2 class="text-sm font-semibold text-brand mb-1" data-i18n="gameTitle">Exit the Backrooms: Level 94</h2>
               <h1 class="pp-title text-3xl md:text-4xl font-extrabold tracking-tight" data-i18n="pp.title">Privacy Policy</h1>
               <p class="text-sm text-ink/70 mt-2">
                 <span data-i18n="pp.updatedLabel">Last updated:</span>
@@ -236,6 +236,7 @@
         en: {
           translation: {
             brand: 'Davilkus Games',
+            gameTitle: 'Exit the Backrooms: Level 94',
             nav: { games: 'Games', about: 'About', contact: 'Contact Us' },
             pp: {
                 title: 'Privacy Policy',
@@ -284,12 +285,13 @@
         ru: {
           translation: {
             brand: 'Davilkus Games',
+            gameTitle: 'Побег из Закулисья: Уровень 94',
             nav: { games: 'Игры', about: 'О нас', contact: 'Контакты' },
             pp: {
                 title: 'Политика конфиденциальности',
                 updatedLabel: 'Последнее обновление:',
                 intro: [
-                    'Davilkus Games создала приложение «Exit the Backrooms: Level 94» как бесплатное приложение. Этот СЕРВИС предоставляется Davilkus Games бесплатно и предназначен для использования «как есть».',
+                    'Davilkus Games создала приложение «Побег из Закулисья: Уровень 94» как бесплатное приложение. Этот СЕРВИС предоставляется Davilkus Games бесплатно и предназначен для использования «как есть».',
                     'Настоящая Политика конфиденциальности используется для информирования посетителей о наших правилах сбора, использования и раскрытия Личной информации, если кто-либо решит воспользоваться нашим Сервисом.'
                 ],
                 sections: {
@@ -359,6 +361,12 @@
         url.searchParams.set('lang', lang);
         window.history.replaceState({}, '', url);
     }
+    
+    function updateTitle() {
+         const ppTitle = i18next.t('pp.title') || 'Privacy Policy';
+         const gameTitle = i18next.t('gameTitle') || 'Exit the Backrooms: Level 94';
+         document.title = `${ppTitle} - ${gameTitle}`;
+    }
 
     function bindLangToggle(id) {
         const btn = document.getElementById(id);
@@ -369,7 +377,7 @@
                 localStorage.setItem('i18nextLng', newLang);
                 document.documentElement.lang = newLang.startsWith('ru') ? 'ru' : 'en';
                 localize();
-                document.title = (i18next.t('pp.title') || 'Privacy Policy') + ' - Exit the Backrooms: Level 94';
+                updateTitle();
                 setLangUI(newLang);
                 setUrlLangParam(newLang);
             });
@@ -384,7 +392,7 @@
             const lang = i18next.language || 'en';
             document.documentElement.lang = lang.startsWith('ru') ? 'ru' : 'en';
             localize();
-            document.title = (i18next.t('pp.title') || 'Privacy Policy') + ' - Exit the Backrooms: Level 94';
+            updateTitle();
             setLangUI(lang);
             bindLangToggle('langToggle');
             bindLangToggle('langToggleMobile');
