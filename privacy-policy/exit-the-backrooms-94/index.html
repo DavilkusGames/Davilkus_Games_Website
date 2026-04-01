@@ -2,403 +2,519 @@
 <html lang="en" class="dark scroll-smooth">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Privacy Policy: Exit the Backrooms - Level 94</title>
-  <meta name="description"
-    content="Privacy Policy for Exit the Backrooms: Level 94 by Davilkus Games. Details on our commitment to user privacy and no-data collection policy." />
-  <link rel="icon" type="image/png" href="/assets/favicon.png" />
-  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
-    
-  <meta name="thumbnail" content="https://davilkusgames.com/assets/logo.webp" />
+    <title>Privacy Policy: Exit the Backrooms - Level 94</title>
+    <meta name="description"
+          content="Privacy Policy for Exit the Backrooms: Level 94 by Davilkus Games. Details on our data collection, analytics, advertising, and Google Play Games integration." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
 
-  <!-- Allow indexing -->
-  <meta name="robots" content="index, follow">
+    <meta name="thumbnail" content="https://davilkusgames.com/assets/logo.webp" />
 
-  <!-- Canonical -->
-  <link rel="canonical" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/" />
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="ru_RU">
-  <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/?lang=en" hreflang="en">
-  <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/?lang=ru" hreflang="ru">
-  <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/" hreflang="x-default">
+    <!-- Allow indexing -->
+    <meta name="robots" content="index, follow">
 
-  <meta name="theme-color" content="#0B0F1A" />
+    <!-- Canonical -->
+    <link rel="canonical" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/?lang=en" hreflang="en">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/?lang=ru" hreflang="ru">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/exit-the-backrooms-94/" hreflang="x-default">
 
-  <!-- Inter font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0B0F1A" />
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Apple Color Emoji'] },
-          colors: {
-            bg: '#0B0F1A', panel: '#0F1524', ink: '#E8EAF2', brand: '#2563eb', brandDark: '#1e40af', header: '#070a12', line: '#1b2336'
-          },
-          boxShadow: { soft: '0 6px 30px rgba(0,0,0,0.35)' }
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Apple Color Emoji'] },
+                    colors: {
+                        bg: '#0B0F1A', panel: '#0F1524', ink: '#E8EAF2', brand: '#2563eb', brandDark: '#1e40af', header: '#070a12', line: '#1b2336'
+                    },
+                    boxShadow: { soft: '0 6px 30px rgba(0,0,0,0.35)' }
+                }
+            }
         }
-      }
-    }
-  </script>
+    </script>
 
-  <!-- GSAP -->
-  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <!-- i18next -->
-  <script defer src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/dist/umd/i18next.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+    <!-- GSAP -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- i18next -->
+    <script defer src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/dist/umd/i18next.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
 
-  <style>
-    body { visibility: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-    body::after { content: ""; position: fixed; inset: -100px; pointer-events: none; z-index: 5; background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(0, 0, 0, 0.6) 100%); }
-    ::-webkit-scrollbar { width: 10px; height: 10px }
-    ::-webkit-scrollbar-track { background: #0b0f1a }
-    ::-webkit-scrollbar-thumb { background: #1b2336; border-radius: 10px }
-    ::-webkit-scrollbar-thumb:hover { background: #2a3552 }
-    ::selection { background: #2563eb; color: #ffffff; }
+    <style>
+        body {
+            visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
 
-    /* Typography matches main PP */
-    h1, h2, h3, .font-semibold, .font-bold { letter-spacing: -0.015em; }
-    .sticky-col { position: sticky; top: 5.25rem; z-index: 0; }
-    .content { position: relative; z-index: 10; }
-    .content a { text-decoration: underline; text-decoration-color: rgba(232, 234, 242, 0.3); text-underline-offset: 4px; transition: color 0.2s, text-decoration-color 0.2s; }
-    .content a:hover { color: #2563eb; text-decoration-color: #2563eb; }
-    .content h2 { margin-top: 2.25rem; margin-bottom: 1rem; color: #fff; }
-    .content h3 { margin-top: 1.5rem; margin-bottom: .75rem; color: #fff; font-size: 1.1rem; }
-    .content p+p { margin-top: 1rem; }
-    .content ul { list-style: disc; margin-left: 1.25rem; padding-left: .75rem; margin-top: .625rem; }
-    .content li+li { margin-top: .4rem; }
-    .pp-title { max-width: 20ch; line-height: 1.05; overflow-wrap: anywhere; word-break: break-word; hyphens: auto; }
-  </style>
+            body::after {
+                content: "";
+                position: fixed;
+                inset: -100px;
+                pointer-events: none;
+                z-index: 5;
+                background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+            }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0b0f1a
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1b2336;
+            border-radius: 10px
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2a3552
+            }
+
+        ::selection {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        h1, h2, h3, .font-semibold, .font-bold {
+            letter-spacing: -0.015em;
+        }
+
+        .sticky-col {
+            position: sticky;
+            top: 5.25rem;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+            .content a {
+                text-decoration: underline;
+                text-decoration-color: rgba(232, 234, 242, 0.3);
+                text-underline-offset: 4px;
+                transition: color 0.2s, text-decoration-color 0.2s;
+            }
+
+                .content a:hover {
+                    color: #2563eb;
+                    text-decoration-color: #2563eb;
+                }
+
+            .content h2 {
+                margin-top: 2.25rem;
+                margin-bottom: 1rem;
+                color: #fff;
+            }
+
+            .content h3 {
+                margin-top: 1.5rem;
+                margin-bottom: .75rem;
+                color: #fff;
+                font-size: 1.1rem;
+            }
+
+            .content p + p {
+                margin-top: 1rem;
+            }
+
+            .content ul {
+                list-style: disc;
+                margin-left: 1.25rem;
+                padding-left: .75rem;
+                margin-top: .625rem;
+                margin-bottom: 1rem;
+            }
+
+            .content li + li {
+                margin-top: .4rem;
+            }
+
+        .pp-title {
+            max-width: 20ch;
+            line-height: 1.05;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            hyphens: auto;
+        }
+    </style>
 </head>
 
 <body class="bg-bg text-ink font-sans antialiased">
-  <!-- Header -->
-  <header class="fixed top-0 inset-x-0 z-50 bg-header/95 backdrop-blur border-b border-line">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3 group">
-        <img src="/assets/logo.webp" alt="Davilkus Games logo" width="64" height="64" class="h-9 w-9 rounded-2xl" />
-        <span class="text-lg font-semibold tracking-tight group-hover:text-white" data-i18n="brand">Davilkus Games</span>
-      </a>
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <nav class="flex items-center gap-8">
-          <a href="/games/" class="hover:opacity-80 transition" data-i18n="nav.games">Games</a>
-          <a href="/#about" class="hover:opacity-80 transition" data-i18n="nav.about">About</a>
-          <a href="/#contact" class="hover:opacity-80 transition" data-i18n="nav.contact">Contact Us</a>
-        </nav>
-        <button id="langToggle" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.75rem] h-8 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
-          <span class="flex-1 text-center text-[10px]">EN</span>
-          <span class="flex-1 text-center text-[10px]">RU</span>
-          <span id="langThumb" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
-        </button>
-      </div>
-      <div class="md:hidden flex items-center gap-2">
-        <button id="langToggleMobile" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.25rem] h-7 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
-          <span class="flex-1 text-center text-[9px]">EN</span>
-          <span class="flex-1 text-center text-[9px]">RU</span>
-          <span id="langThumbMobile" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
-        </button>
-        <button id="menuBtn" class="p-2 rounded-lg hover:bg-panel/70 focus:outline-none focus:ring-2 focus:ring-brand" aria-label="Open menu">
-          <img src="/assets/icons/menu.svg" alt="menu" class="w-6 h-6" />
-        </button>
-      </div>
-    </div>
-    <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-header/95 menu-overlay">
-      <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
-        <a href="/games/" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.games">Games</a>
-        <a href="/#about" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.about">About</a>
-        <a href="/#contact" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.contact">Contact Us</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="pt-16">
-    <section class="relative">
-      <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(37,99,235,0.12),_transparent_60%)]"></div>
-      
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-18">
-        <div class="grid md:grid-cols-12 gap-10">
-          
-          <!-- Sticky Sidebar -->
-          <aside class="md:col-span-3">
-            <div class="sticky-col">
-              <h2 class="text-sm font-semibold text-brand mb-1" data-i18n="gameTitle">Exit the Backrooms: Level 94</h2>
-              <h1 class="pp-title text-3xl md:text-4xl font-extrabold tracking-tight" data-i18n="pp.title">Privacy Policy</h1>
-              <p class="text-sm text-ink/70 mt-2">
-                <span data-i18n="pp.updatedLabel">Last updated:</span>
-                <time>2026-01-31</time>
-              </p>
+    <!-- Header -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-header/95 backdrop-blur border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/assets/logo.webp" alt="Davilkus Games logo" width="64" height="64" class="h-9 w-9 rounded-2xl" />
+                <span class="text-lg font-semibold tracking-tight group-hover:text-white" data-i18n="brand">Davilkus Games</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <nav class="flex items-center gap-8">
+                    <a href="/games/" class="hover:opacity-80 transition" data-i18n="nav.games">Games</a>
+                    <a href="/#about" class="hover:opacity-80 transition" data-i18n="nav.about">About</a>
+                    <a href="/#contact" class="hover:opacity-80 transition" data-i18n="nav.contact">Contact Us</a>
+                </nav>
+                <button id="langToggle" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.75rem] h-8 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
+                    <span class="flex-1 text-center text-[10px]">EN</span>
+                    <span class="flex-1 text-center text-[10px]">RU</span>
+                    <span id="langThumb" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
+                </button>
             </div>
-          </aside>
-
-          <!-- Main Content -->
-          <article class="md:col-span-9 content text-[15px] md:text-base leading-relaxed text-ink/90">
-            <p data-i18n="pp.intro.0">
-              Davilkus Games built the Exit the Backrooms: Level 94 app as a Free app. This SERVICE is provided by Davilkus Games at no cost and is intended for use as is.
-            </p>
-            <p data-i18n="pp.intro.1">
-              This Privacy Policy is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.collection.title">No Data Collection</h2>
-            <p data-i18n="pp.sections.collection.body">
-              We value your privacy. We want to be clear: <strong>We do not collect, store, or share any of your personal data.</strong> The app does not require you to create an account, does not track your location, and does not use any analytics or advertising software. All game progress and settings are stored locally on your device.
-            </p>
-            
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.ads.title">Ad-Free Experience</h2>
-            <p data-i18n="pp.sections.ads.body">
-              This application is completely free of advertisements. We do not use any third-party advertising networks, nor do we collect Advertising IDs (AAID) or Device IDs for marketing purposes.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.log.title">Log Data</h2>
-            <p data-i18n="pp.sections.log.body">
-              Since we do not maintain a backend server for user accounts or analytics, we do not collect Log Data from your device. Any communication with our servers is strictly limited to fetching necessary configuration files (e.g., game updates or news) and does not transmit personally identifiable information.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.cookies.title">Cookies</h2>
-            <p data-i18n="pp.sections.cookies.body">
-              This Service does not use "cookies". The app is designed to function without tracking your behavior or preferences via cookies.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.security.title">Security</h2>
-            <p data-i18n="pp.sections.security.body">
-              Because we do not collect or store your personal information on our servers, your data remains secure on your own device. We do not transmit your data over the internet, eliminating the risk of interception or data breaches on our end.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.children.title">Children’s Privacy</h2>
-            <p data-i18n="pp.sections.children.body">
-              Our Service is safe for all ages regarding data privacy. We do not knowingly collect personally identifiable information from children under 13 (or any other age), because we do not collect information from anyone.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.deletion.title">Data Deletion Requests</h2>
-            <p data-i18n="pp.sections.deletion.body">
-              As we do not collect, transmit, or store any user data on our servers, there is no data to delete. If you wish to remove your local save data, you can simply clear the app's storage in your device settings or uninstall the application.
-            </p>
-
-            <h2 class="text-2xl font-semibold" data-i18n="pp.sections.contact.title">Contact Us</h2>
-            <p data-i18n="pp.sections.contact.body">If you have any questions about our Privacy Policy, do not hesitate to contact us at:</p>
-            <ul>
-                <li><a href="mailto:contact@davilkusgames.com">contact@davilkusgames.com</a></li>
-                <li><a href="mailto:support@davilkusgames.com">support@davilkusgames.com</a></li>
-            </ul>
-
-          </article>
+            <div class="md:hidden flex items-center gap-2">
+                <button id="langToggleMobile" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.25rem] h-7 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
+                    <span class="flex-1 text-center text-[9px]">EN</span>
+                    <span class="flex-1 text-center text-[9px]">RU</span>
+                    <span id="langThumbMobile" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
+                </button>
+                <button id="menuBtn" class="p-2 rounded-lg hover:bg-panel/70 focus:outline-none focus:ring-2 focus:ring-brand" aria-label="Open menu">
+                    <img src="/assets/icons/menu.svg" alt="menu" class="w-6 h-6" />
+                </button>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-header border-t border-line">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-      <div>
-        <div class="text-base md:text-lg">© 2026 Davilkus Games</div>
-        <div class="mt-2 flex items-center gap-4 text-xs">
-          <a href="/privacy-policy/" class="opacity-60 hover:opacity-80 transition">Privacy Policy</a>
-          <a href="/cookie-policy/" class="opacity-60 hover:opacity-80 transition">Cookie Policy</a>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-header/95 menu-overlay">
+            <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+                <a href="/games/" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.games">Games</a>
+                <a href="/#about" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.about">About</a>
+                <a href="/#contact" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.contact">Contact Us</a>
+            </div>
         </div>
-      </div>
-      <div class="flex items-center gap-5">
-        <a href="https://discord.gg/w3zRrUgxMw" class="opacity-80 hover:opacity-100" aria-label="Discord"><img src="/assets/icons/discord.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Discord" /></a>
-        <a href="https://t.me/davilkusgames_official" class="opacity-80 hover:opacity-100" aria-label="Telegram"><img src="/assets/icons/telegram.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Telegram" /></a>
-        <a href="https://www.youtube.com/@davilkusgames" class="opacity-80 hover:opacity-100" aria-label="YouTube"><img src="/assets/icons/youtube.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="YouTube" /></a>
-        <a href="https://x.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="X"><img src="/assets/icons/x.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="X" /></a>
-        <a href="https://github.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="GitHub"><img src="/assets/icons/github.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="GitHub" /></a>
-        <a href="https://vk.com/davilkusgames" class="opacity-80 hover:opacity-100" aria-label="VK"><img src="/assets/icons/vk.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="VK" /></a>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script>
-    const hasGSAP = () => !!(window.gsap);
-    
-    // Mobile Menu
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    let menuOpen = false;
-    function toggleMenu() {
-        menuOpen = !menuOpen;
-        mobileMenu.classList.toggle('hidden', !menuOpen);
-        if(hasGSAP() && menuOpen) {
-            gsap.fromTo(mobileMenu, {height:0, opacity:0}, {height:"auto", opacity:1, duration:0.3});
+    <main class="pt-16">
+        <section class="relative">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(37,99,235,0.12),_transparent_60%)]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-18">
+                <div class="grid md:grid-cols-12 gap-10">
+
+                    <!-- Sticky Sidebar -->
+                    <aside class="md:col-span-3">
+                        <div class="sticky-col">
+                            <h2 class="text-sm font-semibold text-brand mb-1" data-i18n="gameTitle">Exit the Backrooms: Level 94</h2>
+                            <h1 class="pp-title text-3xl md:text-4xl font-extrabold tracking-tight" data-i18n="pp.title">Privacy Policy</h1>
+                            <p class="text-sm text-ink/70 mt-2">
+                                <span data-i18n="pp.updatedLabel">Last updated:</span>
+                                <time>2026-04-01</time>
+                            </p>
+                        </div>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <article class="md:col-span-9 content text-[15px] md:text-base leading-relaxed text-ink/90">
+                        <p data-i18n="pp.intro.0">
+                            Davilkus Games built the Exit the Backrooms: Level 94 app as a Free app. This SERVICE is provided by Davilkus Games at no cost and is intended for use as is.
+                        </p>
+                        <p data-i18n="pp.intro.1">
+                            This Privacy Policy is used to inform visitors regarding our policies regarding the collection, use, and disclosure of Information when using our Service. By using the Service, you agree to the collection and use of information in relation to this policy.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.playgames.title">Google Play Games Services</h2>
+                        <p data-i18n="pp.sections.playgames.body1">
+                            To enhance your experience, our app integrates <strong>Google Play Games Services</strong>. If you choose to sign in via Google's OAuth, we access your Play Games profile to provide features such as:
+                        </p>
+                        <ul>
+                            <li data-i18n="pp.sections.playgames.list1"><strong>Cloud Saves:</strong> Your game progress is securely encrypted and saved to your Google account's hidden app data.</li>
+                            <li data-i18n="pp.sections.playgames.list2"><strong>Achievements & Leaderboards:</strong> Your in-game accomplishments and high scores are tracked and displayed via your Google Play Games profile.</li>
+                        </ul>
+                        <p data-i18n="pp.sections.playgames.body2">
+                            We do not store your Google account credentials on any personal servers. Authentication is handled entirely by the Android operating system and Google's secure infrastructure.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.analytics.title">Analytics and Crash Reporting</h2>
+                        <p data-i18n="pp.sections.analytics.body1">
+                            We use <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong> to understand how players interact with the game and to identify technical issues. The data collected includes:
+                        </p>
+                        <ul>
+                            <li data-i18n="pp.sections.analytics.list1"><strong>App Activity:</strong> Base events (e.g., app launches, session duration) and specific in-game choices (e.g., levels completed, in-game items found).</li>
+                            <li data-i18n="pp.sections.analytics.list2"><strong>Crash Logs:</strong> Device state information, operating system version, and stack traces at the exact moment the app crashes.</li>
+                            <li data-i18n="pp.sections.analytics.list3"><strong>Device IDs:</strong> Anonymized Firebase Installation IDs to distinguish unique users.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.ads.title">Advertising and Device IDs</h2>
+                        <p data-i18n="pp.sections.ads.body">
+                            Our app may feature third-party advertisements. To provide relevant ads and measure their performance, our ad partners collect and process the <strong>Android Advertising ID (AAID)</strong> alongside basic device data. You can opt out of personalized advertising at any time via your device's Google settings.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.retention.title">Data Processing and Retention</h2>
+                        <p data-i18n="pp.sections.retention.body">
+                            All collected data is encrypted in transit and processed by Google's secure servers; Davilkus Games does not own or operate independent database servers to store this data.
+                            <br><br>
+                            <strong>Retention Periods:</strong>
+                            <br>- <strong>Crashlytics Data:</strong> Retained for a maximum of 90 days.
+                            <br>- <strong>Analytics Data:</strong> Retained for up to 14 months.
+                            <br>- <strong>Cloud Saves & Achievements:</strong> Retained indefinitely on your Google Play profile until you manually delete it.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.deletion.title">How to Delete Your Data</h2>
+                        <p data-i18n="pp.sections.deletion.body1">
+                            You maintain full control over your data. To permanently delete your game progress, achievements, and account association with our game:
+                        </p>
+                        <ul>
+                            <li data-i18n="pp.sections.deletion.list1">Open the <strong>Play Games</strong> app on your Android device.</li>
+                            <li data-i18n="pp.sections.deletion.list2">Tap the three dots (More) in the top right corner and select <strong>Settings</strong>.</li>
+                            <li data-i18n="pp.sections.deletion.list3">Scroll down and tap <strong>Delete Play Games account & data</strong>.</li>
+                            <li data-i18n="pp.sections.deletion.list4">Under "Delete individual game data," find <strong>Exit the Backrooms: Level 94</strong> and click <strong>Delete</strong>.</li>
+                        </ul>
+                        <p data-i18n="pp.sections.deletion.body2">
+                            To reset your advertising data, navigate to your device's <strong>Settings > Google > Ads</strong> and tap <strong>Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.children.title">Children’s Privacy</h2>
+                        <p data-i18n="pp.sections.children.body">
+                            These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information via third-party services, we ensure it is deleted in accordance with the policies of those third-party providers.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.contact.title">Contact Us</h2>
+                        <p data-i18n="pp.sections.contact.body">If you have any questions about our Privacy Policy, do not hesitate to contact us at:</p>
+                        <ul>
+                            <li><a href="mailto:contact@davilkusgames.com">contact@davilkusgames.com</a></li>
+                            <li><a href="mailto:support@davilkusgames.com">support@davilkusgames.com</a></li>
+                        </ul>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-header border-t border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+                <div class="text-base md:text-lg">© 2026 Davilkus Games</div>
+                <div class="mt-2 flex items-center gap-4 text-xs">
+                    <a href="/privacy-policy/" class="opacity-60 hover:opacity-80 transition">Privacy Policy</a>
+                    <a href="/cookie-policy/" class="opacity-60 hover:opacity-80 transition">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://discord.gg/w3zRrUgxMw" class="opacity-80 hover:opacity-100" aria-label="Discord"><img src="/assets/icons/discord.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Discord" /></a>
+                <a href="https://t.me/davilkusgames_official" class="opacity-80 hover:opacity-100" aria-label="Telegram"><img src="/assets/icons/telegram.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Telegram" /></a>
+                <a href="https://www.youtube.com/@davilkusgames" class="opacity-80 hover:opacity-100" aria-label="YouTube"><img src="/assets/icons/youtube.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="YouTube" /></a>
+                <a href="https://x.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="X"><img src="/assets/icons/x.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="X" /></a>
+                <a href="https://github.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="GitHub"><img src="/assets/icons/github.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="GitHub" /></a>
+                <a href="https://vk.com/davilkusgames" class="opacity-80 hover:opacity-100" aria-label="VK"><img src="/assets/icons/vk.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="VK" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hasGSAP = () => !!(window.gsap);
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('hidden', !menuOpen);
+            if (hasGSAP() && menuOpen) {
+                gsap.fromTo(mobileMenu, { height: 0, opacity: 0 }, { height: "auto", opacity: 1, duration: 0.3 });
+            }
         }
-    }
-    menuBtn && menuBtn.addEventListener('click', toggleMenu);
+        menuBtn && menuBtn.addEventListener('click', toggleMenu);
 
-    // Resources
-    const resources = {
-        en: {
-          translation: {
-            brand: 'Davilkus Games',
-            gameTitle: 'Exit the Backrooms: Level 94',
-            nav: { games: 'Games', about: 'About', contact: 'Contact Us' },
-            pp: {
-                title: 'Privacy Policy',
-                updatedLabel: 'Last updated:',
-                intro: [
-                    'Davilkus Games built the Exit the Backrooms: Level 94 app as a Free app. This SERVICE is provided by Davilkus Games at no cost and is intended for use as is.',
-                    'This Privacy Policy is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.'
-                ],
-                sections: {
-                    collection: {
-                        title: 'No Data Collection',
-                        body: 'We value your privacy. We want to be clear: <strong>We do not collect, store, or share any of your personal data.</strong> The app does not require you to create an account, does not track your location, and does not use any analytics or advertising software. All game progress and settings are stored locally on your device.'
-                    },
-                    ads: {
-                        title: 'Ad-Free Experience',
-                        body: 'This application is completely free of advertisements. We do not use any third-party advertising networks, nor do we collect Advertising IDs (AAID) or Device IDs for marketing purposes.'
-                    },
-                    log: {
-                        title: 'Log Data',
-                        body: 'Since we do not maintain a backend server for user accounts or analytics, we do not collect Log Data from your device. Any communication with our servers is strictly limited to fetching necessary configuration files (e.g., game updates or news) and does not transmit personally identifiable information.'
-                    },
-                    cookies: {
-                        title: 'Cookies',
-                        body: 'This Service does not use "cookies". The app is designed to function without tracking your behavior or preferences via cookies.'
-                    },
-                    security: {
-                        title: 'Security',
-                        body: 'Because we do not collect or store your personal information on our servers, your data remains secure on your own device. We do not transmit your data over the internet, eliminating the risk of interception or data breaches on our end.'
-                    },
-                    children: {
-                        title: 'Children’s Privacy',
-                        body: 'Our Service is safe for all ages regarding data privacy. We do not knowingly collect personally identifiable information from children under 13 (or any other age), because we do not collect information from anyone.'
-                    },
-                    deletion: {
-                        title: 'Data Deletion Requests',
-                        body: 'As we do not collect, transmit, or store any user data on our servers, there is no data to delete. If you wish to remove your local save data, you can simply clear the app\'s storage in your device settings or uninstall the application.'
-                    },
-                    contact: {
-                        title: 'Contact Us',
-                        body: 'If you have any questions about our Privacy Policy, do not hesitate to contact us at:'
+        // Resources
+        const resources = {
+            en: {
+                translation: {
+                    brand: 'Davilkus Games',
+                    gameTitle: 'Exit the Backrooms: Level 94',
+                    nav: { games: 'Games', about: 'About', contact: 'Contact Us' },
+                    pp: {
+                        title: 'Privacy Policy',
+                        updatedLabel: 'Last updated:',
+                        intro: [
+                            'Davilkus Games built the Exit the Backrooms: Level 94 app as a Free app. This SERVICE is provided by Davilkus Games at no cost and is intended for use as is.',
+                            'This Privacy Policy is used to inform visitors regarding our policies regarding the collection, use, and disclosure of Information when using our Service. By using the Service, you agree to the collection and use of information in relation to this policy.'
+                        ],
+                        sections: {
+                            playgames: {
+                                title: 'Google Play Games Services',
+                                body1: 'To enhance your experience, our app integrates <strong>Google Play Games Services</strong>. If you choose to sign in via Google\'s OAuth, we access your Play Games profile to provide features such as:',
+                                list1: '<strong>Cloud Saves:</strong> Your game progress is securely encrypted and saved to your Google account\'s hidden app data.',
+                                list2: '<strong>Achievements & Leaderboards:</strong> Your in-game accomplishments and high scores are tracked and displayed via your Google Play Games profile.',
+                                body2: 'We do not store your Google account credentials on any personal servers. Authentication is handled entirely by the Android operating system and Google\'s secure infrastructure.'
+                            },
+                            analytics: {
+                                title: 'Analytics and Crash Reporting',
+                                body1: 'We use <strong>Google Analytics for Firebase</strong> and <strong>Firebase Crashlytics</strong> to understand how players interact with the game and to identify technical issues. The data collected includes:',
+                                list1: '<strong>App Activity:</strong> Base events (e.g., app launches, session duration) and specific in-game choices (e.g., levels completed, in-game items found).',
+                                list2: '<strong>Crash Logs:</strong> Device state information, operating system version, and stack traces at the exact moment the app crashes.',
+                                list3: '<strong>Device IDs:</strong> Anonymized Firebase Installation IDs to distinguish unique users.'
+                            },
+                            ads: {
+                                title: 'Advertising and Device IDs',
+                                body: 'Our app may feature third-party advertisements. To provide relevant ads and measure their performance, our ad partners collect and process the <strong>Android Advertising ID (AAID)</strong> alongside basic device data. You can opt out of personalized advertising at any time via your device\'s Google settings.'
+                            },
+                            retention: {
+                                title: 'Data Processing and Retention',
+                                body: 'All collected data is encrypted in transit and processed by Google\'s secure servers; Davilkus Games does not own or operate independent database servers to store this data. <br><br><strong>Retention Periods:</strong><br>- <strong>Crashlytics Data:</strong> Retained for a maximum of 90 days.<br>- <strong>Analytics Data:</strong> Retained for up to 14 months.<br>- <strong>Cloud Saves & Achievements:</strong> Retained indefinitely on your Google Play profile until you manually delete it.'
+                            },
+                            deletion: {
+                                title: 'How to Delete Your Data',
+                                body1: 'You maintain full control over your data. To permanently delete your game progress, achievements, and account association with our game:',
+                                list1: 'Open the <strong>Play Games</strong> app on your Android device.',
+                                list2: 'Tap the three dots (More) in the top right corner and select <strong>Settings</strong>.',
+                                list3: 'Scroll down and tap <strong>Delete Play Games account & data</strong>.',
+                                list4: 'Under "Delete individual game data," find <strong>Exit the Backrooms: Level 94</strong> and click <strong>Delete</strong>.',
+                                body2: 'To reset your advertising data, navigate to your device\'s <strong>Settings > Google > Ads</strong> and tap <strong>Reset advertising ID</strong> or <strong>Delete advertising ID</strong>.'
+                            },
+                            children: {
+                                title: 'Children’s Privacy',
+                                body: 'These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13 years of age. In the case we discover that a child under 13 has provided us with personal information via third-party services, we ensure it is deleted in accordance with the policies of those third-party providers.'
+                            },
+                            contact: {
+                                title: 'Contact Us',
+                                body: 'If you have any questions about our Privacy Policy, do not hesitate to contact us at:'
+                            }
+                        }
+                    }
+                }
+            },
+            ru: {
+                translation: {
+                    brand: 'Davilkus Games',
+                    gameTitle: 'Побег из Закулисья: Уровень 94',
+                    nav: { games: 'Игры', about: 'О нас', contact: 'Контакты' },
+                    pp: {
+                        title: 'Политика конфиденциальности',
+                        updatedLabel: 'Последнее обновление:',
+                        intro: [
+                            'Davilkus Games создала приложение «Побег из Закулисья: Уровень 94» как бесплатное приложение. Этот СЕРВИС предоставляется Davilkus Games бесплатно и предназначен для использования «как есть».',
+                            'Настоящая Политика конфиденциальности служит для информирования пользователей о наших правилах сбора, использования и раскрытия информации при использовании Сервиса. Используя Сервис, вы соглашаетесь на сбор и использование информации в соответствии с данной политикой.'
+                        ],
+                        sections: {
+                            playgames: {
+                                title: 'Сервисы Google Play Игр',
+                                body1: 'Для улучшения игрового опыта наше приложение интегрирует <strong>Сервисы Google Play Игр (Play Games Services)</strong>. Если вы решите войти через систему авторизации Google OAuth, мы получим доступ к вашему профилю Play Игр для предоставления следующих функций:',
+                                list1: '<strong>Облачные сохранения:</strong> Ваш игровой прогресс надежно шифруется и сохраняется в скрытых данных приложений вашего аккаунта Google.',
+                                list2: '<strong>Достижения и Таблицы лидеров:</strong> Ваши внутриигровые успехи и рекорды отслеживаются и отображаются в вашем профиле Google Play Игр.',
+                                body2: 'Мы не храним учетные данные вашего аккаунта Google на личных серверах. Процесс аутентификации полностью обрабатывается операционной системой Android и безопасной инфраструктурой Google.'
+                            },
+                            analytics: {
+                                title: 'Аналитика и Отчеты об ошибках',
+                                body1: 'Мы используем <strong>Google Analytics для Firebase</strong> и <strong>Firebase Crashlytics</strong>, чтобы понимать, как игроки взаимодействуют с игрой, и выявлять технические проблемы. Собираемые данные включают:',
+                                list1: '<strong>Активность приложения:</strong> Базовые события (например, запуск приложения, длительность сессии) и конкретные внутриигровые действия (например, пройденные уровни, найденные предметы).',
+                                list2: '<strong>Журналы сбоев (Крэш-логи):</strong> Информация о состоянии устройства, версия ОС и трассировка стека в точный момент сбоя приложения.',
+                                list3: '<strong>Идентификаторы устройств:</strong> Анонимизированные идентификаторы установки Firebase для различения уникальных пользователей.'
+                            },
+                            ads: {
+                                title: 'Реклама и Идентификаторы устройств',
+                                body: 'В нашем приложении может присутствовать сторонняя реклама. Для показа релевантных объявлений и оценки их эффективности наши рекламные партнеры собирают и обрабатывают <strong>Рекламный идентификатор Android (AAID)</strong> вместе с базовыми данными об устройстве. Вы можете отказаться от персонализированной рекламы в любой момент через настройки Google на вашем устройстве.'
+                            },
+                            retention: {
+                                title: 'Обработка и хранение данных',
+                                body: 'Все собранные данные шифруются при передаче и обрабатываются безопасными серверами Google; Davilkus Games не владеет и не управляет независимыми серверами баз данных для хранения этой информации. <br><br><strong>Сроки хранения:</strong><br>- <strong>Данные Crashlytics:</strong> Хранятся максимум 90 дней.<br>- <strong>Данные аналитики:</strong> Хранятся до 14 месяцев.<br>- <strong>Облачные сохранения и Достижения:</strong> Хранятся бессрочно в вашем профиле Google Play, пока вы не удалите их вручную.'
+                            },
+                            deletion: {
+                                title: 'Как удалить свои данные',
+                                body1: 'Вы сохраняете полный контроль над своими данными. Чтобы навсегда удалить игровой прогресс, достижения и связь аккаунта с нашей игрой:',
+                                list1: 'Откройте приложение <strong>Play Игры</strong> на вашем Android-устройстве.',
+                                list2: 'Нажмите на три точки (Ещё) в правом верхнем углу и выберите <strong>Настройки</strong>.',
+                                list3: 'Прокрутите вниз и нажмите <strong>Удалить аккаунт и данные Play Игр</strong>.',
+                                list4: 'В разделе "Удалить данные отдельной игры" найдите <strong>Exit the Backrooms: Level 94</strong> и нажмите <strong>Удалить</strong>.',
+                                body2: 'Чтобы сбросить рекламные данные, перейдите в <strong>Настройки > Google > Реклама</strong> на вашем устройстве и нажмите <strong>Сбросить рекламный идентификатор</strong> или <strong>Удалить рекламный идентификатор</strong>.'
+                            },
+                            children: {
+                                title: 'Конфиденциальность детей',
+                                body: 'Данные сервисы не предназначены для лиц младше 13 лет. Мы намеренно не собираем персональную информацию от детей младше 13 лет. Если мы обнаружим, что ребенок младше 13 лет предоставил нам личную информацию через сторонние сервисы, мы позаботимся о ее удалении в соответствии с политиками этих сторонних провайдеров.'
+                            },
+                            contact: {
+                                title: 'Связаться с нами',
+                                body: 'Если у вас есть какие-либо вопросы относительно нашей Политики конфиденциальности, не стесняйтесь обращаться к нам:'
+                            }
+                        }
                     }
                 }
             }
-          }
-        },
-        ru: {
-          translation: {
-            brand: 'Davilkus Games',
-            gameTitle: 'Побег из Закулисья: Уровень 94',
-            nav: { games: 'Игры', about: 'О нас', contact: 'Контакты' },
-            pp: {
-                title: 'Политика конфиденциальности',
-                updatedLabel: 'Последнее обновление:',
-                intro: [
-                    'Davilkus Games создала приложение «Побег из Закулисья: Уровень 94» как бесплатное приложение. Этот СЕРВИС предоставляется Davilkus Games бесплатно и предназначен для использования «как есть».',
-                    'Настоящая Политика конфиденциальности используется для информирования посетителей о наших правилах сбора, использования и раскрытия Личной информации, если кто-либо решит воспользоваться нашим Сервисом.'
-                ],
-                sections: {
-                    collection: {
-                        title: 'Отсутствие сбора данных',
-                        body: 'Мы ценим вашу конфиденциальность. Мы хотим заявить прямо: <strong>Мы не собираем, не храним и не передаем ваши персональные данные.</strong> Приложение не требует создания учетной записи, не отслеживает ваше местоположение и не использует аналитическое или рекламное программное обеспечение. Весь игровой прогресс и настройки хранятся локально на вашем устройстве.'
-                    },
-                    ads: {
-                        title: 'Отсутствие рекламы',
-                        body: 'Это приложение полностью свободно от рекламы. Мы не используем сторонние рекламные сети и не собираем Рекламные идентификаторы (AAID) или ID устройств для маркетинговых целей.'
-                    },
-                    log: {
-                        title: 'Лог-данные (Log Data)',
-                        body: 'Поскольку мы не используем серверы для учетных записей пользователей или аналитики, мы не собираем Log Data с вашего устройства. Любая связь с нашими серверами строго ограничена загрузкой необходимых файлов конфигурации (например, обновлений или новостей) и не передает личную информацию.'
-                    },
-                    cookies: {
-                        title: 'Файлы Cookie',
-                        body: 'Этот Сервис не использует «cookie». Приложение создано для работы без отслеживания вашего поведения или предпочтений с помощью файлов cookie.'
-                    },
-                    security: {
-                        title: 'Безопасность',
-                        body: 'Поскольку мы не собираем и не храним вашу личную информацию на наших серверах, ваши данные остаются в безопасности на вашем устройстве. Мы не передаем ваши данные через интернет, что исключает риск перехвата или утечки данных с нашей стороны.'
-                    },
-                    children: {
-                        title: 'Конфиденциальность детей',
-                        body: 'Наш Сервис безопасен для всех возрастов в отношении конфиденциальности данных. Мы сознательно не собираем личную информацию от детей младше 13 лет (или любого другого возраста), так как мы вообще не собираем информацию от кого-либо.'
-                    },
-                    deletion: {
-                        title: 'Удаление данных',
-                        body: 'Поскольку мы не собираем, не передаем и не храним какие-либо данные пользователей на наших серверах, удалять нечего. Если вы хотите удалить свои локальные сохранения, вы можете просто очистить хранилище приложения в настройках устройства или удалить приложение.'
-                    },
-                    contact: {
-                        title: 'Связаться с нами',
-                        body: 'Если у вас есть какие-либо вопросы относительно нашей Политики конфиденциальности, не стесняйтесь обращаться к нам:'
-                    }
-                }
+        };
+
+        function localize() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const val = i18next.t(key);
+                if (val) el.innerHTML = val;
+            });
+        }
+
+        function setLangUI(lang) {
+            const thumb = document.getElementById('langThumb');
+            const thumbM = document.getElementById('langThumbMobile');
+            const isRU = lang && lang.startsWith('ru');
+
+            if (thumb) {
+                thumb.classList.toggle('right-1', !isRU);
+                thumb.classList.toggle('left-1', isRU);
             }
-          }
+            if (thumbM) {
+                thumbM.classList.toggle('right-1', !isRU);
+                thumbM.classList.toggle('left-1', isRU);
+            }
         }
-    };
 
-    function localize() {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            const val = i18next.t(key);
-            if (val) el.innerHTML = val;
-        });
-    }
-
-    function setLangUI(lang) {
-        const thumb = document.getElementById('langThumb');
-        const thumbM = document.getElementById('langThumbMobile');
-        const isRU = lang && lang.startsWith('ru');
-      
-        if (thumb) {
-            thumb.classList.toggle('right-1', !isRU);
-            thumb.classList.toggle('left-1', isRU);   
+        function setUrlLangParam(lang) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url);
         }
-        if (thumbM) {
-            thumbM.classList.toggle('right-1', !isRU);
-            thumbM.classList.toggle('left-1', isRU);  
+
+        function updateTitle() {
+            const ppTitle = i18next.t('pp.title') || 'Privacy Policy';
+            const gameTitle = i18next.t('gameTitle') || 'Exit the Backrooms: Level 94';
+            document.title = `${ppTitle} - ${gameTitle}`;
         }
-    }
 
-    function setUrlLangParam(lang) {
-        const url = new URL(window.location.href);
-        url.searchParams.set('lang', lang);
-        window.history.replaceState({}, '', url);
-    }
-    
-    function updateTitle() {
-         const ppTitle = i18next.t('pp.title') || 'Privacy Policy';
-         const gameTitle = i18next.t('gameTitle') || 'Exit the Backrooms: Level 94';
-         document.title = `${ppTitle} - ${gameTitle}`;
-    }
+        function bindLangToggle(id) {
+            const btn = document.getElementById(id);
+            if (!btn) return;
+            btn.addEventListener('click', () => {
+                const newLang = (i18next.language || 'en').startsWith('ru') ? 'en' : 'ru';
+                i18next.changeLanguage(newLang, () => {
+                    localStorage.setItem('i18nextLng', newLang);
+                    document.documentElement.lang = newLang.startsWith('ru') ? 'ru' : 'en';
+                    localize();
+                    updateTitle();
+                    setLangUI(newLang);
+                    setUrlLangParam(newLang);
+                });
+            });
+        }
 
-    function bindLangToggle(id) {
-        const btn = document.getElementById(id);
-        if(!btn) return;
-        btn.addEventListener('click', () => {
-            const newLang = (i18next.language || 'en').startsWith('ru') ? 'en' : 'ru';
-            i18next.changeLanguage(newLang, () => {
-                localStorage.setItem('i18nextLng', newLang);
-                document.documentElement.lang = newLang.startsWith('ru') ? 'ru' : 'en';
+        window.addEventListener('DOMContentLoaded', () => {
+            i18next.use(window.i18nextBrowserLanguageDetector).init({
+                resources, fallbackLng: 'en',
+                detection: { order: ['querystring', 'cookie', 'localStorage', 'navigator'], caches: ['localStorage', 'cookie'], lookupQuerystring: 'lang' }
+            }, () => {
+                const lang = i18next.language || 'en';
+                document.documentElement.lang = lang.startsWith('ru') ? 'ru' : 'en';
                 localize();
                 updateTitle();
-                setLangUI(newLang);
-                setUrlLangParam(newLang);
+                setLangUI(lang);
+                bindLangToggle('langToggle');
+                bindLangToggle('langToggleMobile');
+                document.body.style.visibility = 'visible';
             });
         });
-    }
-
-    window.addEventListener('DOMContentLoaded', () => {
-        i18next.use(window.i18nextBrowserLanguageDetector).init({
-            resources, fallbackLng: 'en',
-            detection: { order: ['querystring', 'cookie', 'localStorage', 'navigator'], caches: ['localStorage', 'cookie'], lookupQuerystring: 'lang' }
-        }, () => {
-            const lang = i18next.language || 'en';
-            document.documentElement.lang = lang.startsWith('ru') ? 'ru' : 'en';
-            localize();
-            updateTitle();
-            setLangUI(lang);
-            bindLangToggle('langToggle');
-            bindLangToggle('langToggleMobile');
-            document.body.style.visibility = 'visible';
-        });
-    });
-  </script>
+    </script>
 </body>
 </html>
