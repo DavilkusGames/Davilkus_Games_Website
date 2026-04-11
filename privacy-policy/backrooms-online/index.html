@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Privacy Policy: The Backrooms: Online</title>
+    <meta name="description"
+          content="Privacy Policy for The Backrooms: Online by Davilkus Games. Details on our data collection, multiplayer features, advertising, and user rights." />
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" />
+
+    <meta name="thumbnail" content="https://davilkusgames.com/assets/logo.webp" />
+
+    <!-- Allow indexing -->
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://davilkusgames.com/privacy-policy/the-backrooms-online/" />
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="ru_RU">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/the-backrooms-online/?lang=en" hreflang="en">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/the-backrooms-online/?lang=ru" hreflang="ru">
+    <link rel="alternate" href="https://davilkusgames.com/privacy-policy/the-backrooms-online/" hreflang="x-default">
+
+    <meta name="theme-color" content="#0B0F1A" />
+
+    <!-- Inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Apple Color Emoji'] },
+                    colors: {
+                        bg: '#0B0F1A', panel: '#0F1524', ink: '#E8EAF2', brand: '#2563eb', brandDark: '#1e40af', header: '#070a12', line: '#1b2336'
+                    },
+                    boxShadow: { soft: '0 6px 30px rgba(0,0,0,0.35)' }
+                }
+            }
+        }
+    </script>
+
+    <!-- GSAP -->
+    <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- i18next -->
+    <script defer src="https://cdn.jsdelivr.net/npm/i18next@23.11.5/dist/umd/i18next.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/i18next-browser-languagedetector@7.2.0/i18nextBrowserLanguageDetector.min.js"></script>
+
+    <style>
+        body {
+            visibility: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+            body::after {
+                content: "";
+                position: fixed;
+                inset: -100px;
+                pointer-events: none;
+                z-index: 5;
+                background: radial-gradient(circle at 50% 50%, transparent 40%, rgba(0, 0, 0, 0.6) 100%);
+            }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #0b0f1a
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1b2336;
+            border-radius: 10px
+        }
+
+            ::-webkit-scrollbar-thumb:hover {
+                background: #2a3552
+            }
+
+        ::selection {
+            background: #2563eb;
+            color: #ffffff;
+        }
+
+        h1, h2, h3, .font-semibold, .font-bold {
+            letter-spacing: -0.015em;
+        }
+
+        .sticky-col {
+            position: sticky;
+            top: 5.25rem;
+            z-index: 0;
+        }
+
+        .content {
+            position: relative;
+            z-index: 10;
+        }
+
+            .content a {
+                text-decoration: underline;
+                text-decoration-color: rgba(232, 234, 242, 0.3);
+                text-underline-offset: 4px;
+                transition: color 0.2s, text-decoration-color 0.2s;
+            }
+
+                .content a:hover {
+                    color: #2563eb;
+                    text-decoration-color: #2563eb;
+                }
+
+            .content h2 {
+                margin-top: 2.25rem;
+                margin-bottom: 1rem;
+                color: #fff;
+            }
+
+            .content h3 {
+                margin-top: 1.5rem;
+                margin-bottom: .75rem;
+                color: #fff;
+                font-size: 1.1rem;
+            }
+
+            .content p + p {
+                margin-top: 1rem;
+            }
+
+            .content ul {
+                list-style: disc;
+                margin-left: 1.25rem;
+                padding-left: .75rem;
+                margin-top: .625rem;
+                margin-bottom: 1rem;
+            }
+
+            .content li + li {
+                margin-top: .4rem;
+            }
+
+        .pp-title {
+            max-width: 20ch;
+            line-height: 1.05;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            hyphens: auto;
+        }
+    </style>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased">
+    <!-- Header -->
+    <header class="fixed top-0 inset-x-0 z-50 bg-header/95 backdrop-blur border-b border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="/" class="flex items-center gap-3 group">
+                <img src="/assets/logo.webp" alt="Davilkus Games logo" width="64" height="64" class="h-9 w-9 rounded-2xl" />
+                <span class="text-lg font-semibold tracking-tight group-hover:text-white" data-i18n="brand">Davilkus Games</span>
+            </a>
+            <div class="hidden md:flex items-center gap-6 text-sm">
+                <nav class="flex items-center gap-8">
+                    <a href="/games/" class="hover:opacity-80 transition" data-i18n="nav.games">Games</a>
+                    <a href="/#about" class="hover:opacity-80 transition" data-i18n="nav.about">About</a>
+                    <a href="/#contact" class="hover:opacity-80 transition" data-i18n="nav.contact">Contact Us</a>
+                </nav>
+                <button id="langToggle" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.75rem] h-8 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
+                    <span class="flex-1 text-center text-[10px]">EN</span>
+                    <span class="flex-1 text-center text-[10px]">RU</span>
+                    <span id="langThumb" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
+                </button>
+            </div>
+            <div class="md:hidden flex items-center gap-2">
+                <button id="langToggleMobile" class="relative inline-flex items-center bg-header/60 border border-line rounded-full px-1 py-1 w-[4.25rem] h-7 select-none focus:outline-none focus:ring-2 focus:ring-brand transition" aria-label="Toggle language">
+                    <span class="flex-1 text-center text-[9px]">EN</span>
+                    <span class="flex-1 text-center text-[9px]">RU</span>
+                    <span id="langThumbMobile" class="absolute inset-y-1 left-1 w-1/2 rounded-full bg-brand transition-all"></span>
+                </button>
+                <button id="menuBtn" class="p-2 rounded-lg hover:bg-panel/70 focus:outline-none focus:ring-2 focus:ring-brand" aria-label="Open menu">
+                    <img src="/assets/icons/menu.svg" alt="menu" class="w-6 h-6" />
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="hidden md:hidden border-t border-line bg-header/95 menu-overlay">
+            <div class="max-w-7xl mx-auto px-4 py-3 flex flex-col gap-2 text-sm">
+                <a href="/games/" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.games">Games</a>
+                <a href="/#about" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.about">About</a>
+                <a href="/#contact" class="py-3 px-3 rounded-lg hover:bg-panel/70" data-i18n="nav.contact">Contact Us</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <section class="relative">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_rgba(37,99,235,0.12),_transparent_60%)]"></div>
+
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-18">
+                <div class="grid md:grid-cols-12 gap-10">
+
+                    <!-- Sticky Sidebar -->
+                    <aside class="md:col-span-3">
+                        <div class="sticky-col">
+                            <h2 class="text-sm font-semibold text-brand mb-1" data-i18n="gameTitle">The Backrooms: Online</h2>
+                            <h1 class="pp-title text-3xl md:text-4xl font-extrabold tracking-tight" data-i18n="pp.title">Privacy Policy</h1>
+                            <p class="text-sm text-ink/70 mt-2">
+                                <span data-i18n="pp.updatedLabel">Last updated:</span>
+                                <time>2026-04-11</time>
+                            </p>
+                        </div>
+                    </aside>
+
+                    <!-- Main Content -->
+                    <article class="md:col-span-9 content text-[15px] md:text-base leading-relaxed text-ink/90">
+                        <p data-i18n="pp.intro.0">
+                            Davilkus Games provides "The Backrooms: Online" across multiple platforms (Android, iOS, Steam, Web, and itch.io). This Service is intended for use "as is".
+                        </p>
+                        <p data-i18n="pp.intro.1">
+                            This Privacy Policy explains how we collect, use, and protect your information when you play our multiplayer game. By using the Service, you agree to the collection and use of information in relation to this policy.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.collection.title">1. Information We Collect</h2>
+                        <p data-i18n="pp.sections.collection.body1">When you play The Backrooms: Online, we collect specific data to provide a seamless multiplayer experience. This includes:</p>
+                        <ul>
+                            <li data-i18n="pp.sections.collection.list1"><strong>Device & Network Data:</strong> IP Address, precise device specifications, operating system, and internal identifiers.</li>
+                            <li data-i18n="pp.sections.collection.list2"><strong>Location Data:</strong> General coarse location (City and Country level) to optimize server connections.</li>
+                            <li data-i18n="pp.sections.collection.list3"><strong>In-Game Data:</strong> Purchase history, diagnostics, bug reports, and in-game actions/progress (which are backed up via Cloud Saves).</li>
+                            <li data-i18n="pp.sections.collection.list4"><strong>User-Generated Content:</strong> Chat message history, profile pictures, user-created Lua mods, and public leaderboard scores.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.accounts.title">2. Accounts and Authentication</h2>
+                        <p data-i18n="pp.sections.accounts.body1">
+                            The game offers multiple ways to play. You can play anonymously as a <strong>Guest</strong>, create an internal account (using only a username and password—no email required), or log in via third-party providers (Google Play Games, Apple Game Center, Steamworks). 
+                        </p>
+                        <p data-i18n="pp.sections.accounts.body2">
+                            Accounts can be linked across platforms. All authentication data is heavily encrypted. We do not store your external account credentials; we only receive an authorized token to link your progress.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.social.title">3. Multiplayer, Chat, and Age Gate</h2>
+                        <p data-i18n="pp.sections.social.body1">
+                            Because this is a multiplayer game, you may interact with other players through our friend system, block system, voice chat, and text chat. 
+                        </p>
+                        <ul>
+                            <li data-i18n="pp.sections.social.list1"><strong>Age Verification:</strong> Upon launching the game, you are asked to provide your age. If you are under the required age, all chat features are automatically disabled to protect minors.</li>
+                            <li data-i18n="pp.sections.social.list2"><strong>Chat & Moderation:</strong> Text chat includes censorship filters, and message history is logged to enforce community guidelines. Both voice and text chat can be disabled manually in the settings.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.monetization.title">4. Advertising and In-App Purchases</h2>
+                        <p data-i18n="pp.sections.monetization.body1">
+                            Our game features standard in-app purchases (processed securely through Google Play, Apple App Store, or Steam). We do not use "gacha" or randomized loot box mechanics. We only retain a record of your purchase history to grant you items; we never process or store your credit card information.
+                        </p>
+                        <p data-i18n="pp.sections.monetization.body2">
+                            We also display advertisements. To measure performance and provide relevant ads, we collect your Advertising IDs (AAID/IDFA). We use <strong>CAS.AI</strong> as an ad mediation platform, which routes requests to partners including AdMob, AppLovin, UnityAds, and Yandex Ads.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.analytics.title">5. Analytics and Crashlytics</h2>
+                        <p data-i18n="pp.sections.analytics.body1">
+                            We use Firebase Analytics and Firebase Crashlytics to monitor game stability. If the game crashes, we collect an automated report containing your device's state and stack traces. This data is strictly used to fix bugs and improve performance.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.retention.title">6. Data Security and Retention</h2>
+                        <p data-i18n="pp.sections.retention.body1">
+                            All network traffic and stored data are encrypted. Because multiplayer progress, friend lists, and leaderboards are persistent, your user profile and associated data are retained indefinitely as long as your account exists.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.deletion.title">7. Managing and Deleting Your Data</h2>
+                        <p data-i18n="pp.sections.deletion.body1">You have full control over your data. You may request data modification or deletion in the following ways:</p>
+                        <ul>
+                            <li data-i18n="pp.sections.deletion.list1"><strong>Full Account Deletion (In-Game):</strong> You can press the "Delete Account" button in the game settings. This places your account in a 7-day deletion queue. If you do not cancel the request within 7 days, your account and all associated data will be permanently wiped.</li>
+                            <li data-i18n="pp.sections.deletion.list2"><strong>Full Account Deletion (Email):</strong> You can email us directly to request manual deletion of your internal account.</li>
+                            <li data-i18n="pp.sections.deletion.list3"><strong>Partial Data Removal:</strong> If you wish to keep your account but want specific data removed (e.g., clearing your chat history or specific internal logs), you can request this by contacting our support team.</li>
+                        </ul>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.children.title">8. Children’s Privacy</h2>
+                        <p data-i18n="pp.sections.children.body1">
+                            This game is not directed at children under the age of 13. Through our initial age-gate, we disable social features for minors. We do not knowingly collect personal information from children. If you believe a child has provided us with restricted personal data, please contact us so we can delete it immediately.
+                        </p>
+
+                        <h2 class="text-2xl font-semibold" data-i18n="pp.sections.contact.title">9. Contact Us</h2>
+                        <p data-i18n="pp.sections.contact.body1">If you have any questions or requests regarding your data and this Privacy Policy, please contact us at:</p>
+                        <ul>
+                            <li><a href="mailto:contact@davilkusgames.com">contact@davilkusgames.com</a></li>
+                            <li><a href="mailto:support@davilkusgames.com">support@davilkusgames.com</a></li>
+                        </ul>
+
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-header border-t border-line">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+            <div>
+                <div class="text-base md:text-lg">© 2026 Davilkus Games</div>
+                <div class="mt-2 flex items-center gap-4 text-xs">
+                    <a href="/privacy-policy/" class="opacity-60 hover:opacity-80 transition">Privacy Policy</a>
+                    <a href="/cookie-policy/" class="opacity-60 hover:opacity-80 transition">Cookie Policy</a>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <a href="https://discord.gg/w3zRrUgxMw" class="opacity-80 hover:opacity-100" aria-label="Discord"><img src="/assets/icons/discord.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Discord" /></a>
+                <a href="https://t.me/davilkusgames_official" class="opacity-80 hover:opacity-100" aria-label="Telegram"><img src="/assets/icons/telegram.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="Telegram" /></a>
+                <a href="https://www.youtube.com/@davilkusgames" class="opacity-80 hover:opacity-100" aria-label="YouTube"><img src="/assets/icons/youtube.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="YouTube" /></a>
+                <a href="https://x.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="X"><img src="/assets/icons/x.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="X" /></a>
+                <a href="https://github.com/DavilkusGames" class="opacity-80 hover:opacity-100" aria-label="GitHub"><img src="/assets/icons/github.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="GitHub" /></a>
+                <a href="https://vk.com/davilkusgames" class="opacity-80 hover:opacity-100" aria-label="VK"><img src="/assets/icons/vk.svg" width="32" height="32" loading="lazy" decoding="async" class="w-8 h-8" alt="VK" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hasGSAP = () => !!(window.gsap);
+
+        // Mobile Menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        let menuOpen = false;
+        function toggleMenu() {
+            menuOpen = !menuOpen;
+            mobileMenu.classList.toggle('hidden', !menuOpen);
+            if (hasGSAP() && menuOpen) {
+                gsap.fromTo(mobileMenu, { height: 0, opacity: 0 }, { height: "auto", opacity: 1, duration: 0.3 });
+            }
+        }
+        menuBtn && menuBtn.addEventListener('click', toggleMenu);
+
+        // Resources
+        const resources = {
+            en: {
+                translation: {
+                    brand: 'Davilkus Games',
+                    gameTitle: 'The Backrooms: Online',
+                    nav: { games: 'Games', about: 'About', contact: 'Contact Us' },
+                    pp: {
+                        title: 'Privacy Policy',
+                        updatedLabel: 'Last updated:',
+                        intro: [
+                            'Davilkus Games provides "The Backrooms: Online" across multiple platforms (Android, iOS, Steam, Web, and itch.io). This Service is intended for use "as is".',
+                            'This Privacy Policy explains how we collect, use, and protect your information when you play our multiplayer game. By using the Service, you agree to the collection and use of information in relation to this policy.'
+                        ],
+                        sections: {
+                            collection: {
+                                title: '1. Information We Collect',
+                                body1: 'When you play The Backrooms: Online, we collect specific data to provide a seamless multiplayer experience. This includes:',
+                                list1: '<strong>Device & Network Data:</strong> IP Address, precise device specifications, operating system, and internal identifiers.',
+                                list2: '<strong>Location Data:</strong> General coarse location (City and Country level) to optimize server connections.',
+                                list3: '<strong>In-Game Data:</strong> Purchase history, diagnostics, bug reports, and in-game actions/progress (which are backed up via Cloud Saves).',
+                                list4: '<strong>User-Generated Content:</strong> Chat message history, profile pictures, user-created Lua mods, and public leaderboard scores.'
+                            },
+                            accounts: {
+                                title: '2. Accounts and Authentication',
+                                body1: 'The game offers multiple ways to play. You can play anonymously as a <strong>Guest</strong>, create an internal account (using only a username and password—no email required), or log in via third-party providers (Google Play Games, Apple Game Center, Steamworks).',
+                                body2: 'Accounts can be linked across platforms. All authentication data is heavily encrypted. We do not store your external account credentials; we only receive an authorized token to link your progress.'
+                            },
+                            social: {
+                                title: '3. Multiplayer, Chat, and Age Gate',
+                                body1: 'Because this is a multiplayer game, you may interact with other players through our friend system, block system, voice chat, and text chat.',
+                                list1: '<strong>Age Verification:</strong> Upon launching the game, you are asked to provide your age. If you are under the required age, all chat features are automatically disabled to protect minors.',
+                                list2: '<strong>Chat & Moderation:</strong> Text chat includes censorship filters, and message history is logged to enforce community guidelines. Both voice and text chat can be disabled manually in the settings.'
+                            },
+                            monetization: {
+                                title: '4. Advertising and In-App Purchases',
+                                body1: 'Our game features standard in-app purchases (processed securely through Google Play, Apple App Store, or Steam). We do not use "gacha" or randomized loot box mechanics. We only retain a record of your purchase history to grant you items; we never process or store your credit card information.',
+                                body2: 'We also display advertisements. To measure performance and provide relevant ads, we collect your Advertising IDs (AAID/IDFA). We use <strong>CAS.AI</strong> as an ad mediation platform, which routes requests to partners including AdMob, AppLovin, UnityAds, and Yandex Ads.'
+                            },
+                            analytics: {
+                                title: '5. Analytics and Crashlytics',
+                                body1: 'We use Firebase Analytics and Firebase Crashlytics to monitor game stability. If the game crashes, we collect an automated report containing your device\'s state and stack traces. This data is strictly used to fix bugs and improve performance.'
+                            },
+                            retention: {
+                                title: '6. Data Security and Retention',
+                                body1: 'All network traffic and stored data are encrypted. Because multiplayer progress, friend lists, and leaderboards are persistent, your user profile and associated data are retained indefinitely as long as your account exists.'
+                            },
+                            deletion: {
+                                title: '7. Managing and Deleting Your Data',
+                                body1: 'You have full control over your data. You may request data modification or deletion in the following ways:',
+                                list1: '<strong>Full Account Deletion (In-Game):</strong> You can press the "Delete Account" button in the game settings. This places your account in a 7-day deletion queue. If you do not cancel the request within 7 days, your account and all associated data will be permanently wiped.',
+                                list2: '<strong>Full Account Deletion (Email):</strong> You can email us directly to request manual deletion of your internal account.',
+                                list3: '<strong>Partial Data Removal:</strong> If you wish to keep your account but want specific data removed (e.g., clearing your chat history or specific internal logs), you can request this by contacting our support team.'
+                            },
+                            children: {
+                                title: '8. Children’s Privacy',
+                                body1: 'This game is not directed at children under the age of 13. Through our initial age-gate, we disable social features for minors. We do not knowingly collect personal information from children. If you believe a child has provided us with restricted personal data, please contact us so we can delete it immediately.'
+                            },
+                            contact: {
+                                title: '9. Contact Us',
+                                body1: 'If you have any questions or requests regarding your data and this Privacy Policy, please contact us at:'
+                            }
+                        }
+                    }
+                }
+            },
+            ru: {
+                translation: {
+                    brand: 'Davilkus Games',
+                    gameTitle: 'The Backrooms: Online',
+                    nav: { games: 'Игры', about: 'О нас', contact: 'Контакты' },
+                    pp: {
+                        title: 'Политика конфиденциальности',
+                        updatedLabel: 'Последнее обновление:',
+                        intro: [
+                            'Davilkus Games предоставляет игру «The Backrooms: Online» на нескольких платформах (Android, iOS, Steam, Web и itch.io). Данный Сервис предоставляется «как есть».',
+                            'Настоящая Политика конфиденциальности объясняет, как мы собираем, используем и защищаем вашу информацию во время игры в наш многопользовательский проект. Используя Сервис, вы соглашаетесь на сбор и использование информации в соответствии с данной политикой.'
+                        ],
+                        sections: {
+                            collection: {
+                                title: '1. Какую информацию мы собираем',
+                                body1: 'Когда вы играете в The Backrooms: Online, мы собираем определенные данные для обеспечения бесперебойного многопользовательского опыта. Сюда входят:',
+                                list1: '<strong>Данные об устройстве и сети:</strong> IP-адрес, точные характеристики устройства, операционная система и внутренние идентификаторы.',
+                                list2: '<strong>Данные о местоположении:</strong> Общее приблизительное местоположение (на уровне города и страны) для оптимизации подключения к серверам.',
+                                list3: '<strong>Внутриигровые данные:</strong> История покупок, диагностика, отчеты об ошибках и внутриигровые действия/прогресс (которые сохраняются в облаке).',
+                                list4: '<strong>Пользовательский контент:</strong> История сообщений в чате, аватары профиля, созданные пользователями моды (Lua) и рекорды в публичных таблицах лидеров.'
+                            },
+                            accounts: {
+                                title: '2. Аккаунты и аутентификация',
+                                body1: 'Игра предлагает несколько способов входа. Вы можете играть анонимно как <strong>Гость</strong>, создать внутренний аккаунт (используя только имя пользователя и пароль — электронная почта не требуется) или войти через сторонних провайдеров (Google Play Игры, Apple Game Center, Steamworks).',
+                                body2: 'Аккаунты можно связывать между платформами. Все данные аутентификации надежно зашифрованы. Мы не храним учетные данные ваших внешних аккаунтов; мы получаем только авторизованный токен для привязки вашего прогресса.'
+                            },
+                            social: {
+                                title: '3. Мультиплеер, Чат и Возрастные ограничения',
+                                body1: 'Поскольку это многопользовательская игра, вы можете взаимодействовать с другими игроками через систему друзей, блокировок, голосовой и текстовый чаты.',
+                                list1: '<strong>Проверка возраста:</strong> При запуске игры мы запрашиваем ваш возраст. Если вы младше требуемого возраста, все функции чата автоматически отключаются для защиты несовершеннолетних.',
+                                list2: '<strong>Чат и модерация:</strong> Текстовый чат включает фильтры цензуры, а история сообщений логируется для соблюдения правил сообщества. Как голосовой, так и текстовый чаты можно отключить вручную в настройках.'
+                            },
+                            monetization: {
+                                title: '4. Реклама и Встроенные покупки',
+                                body1: 'В нашей игре есть стандартные встроенные покупки (безопасно обрабатываемые через Google Play, Apple App Store или Steam). Мы не используем механики «гача» или случайных лутбоксов. Мы сохраняем только историю ваших покупок для выдачи предметов; мы никогда не обрабатываем и не храним данные ваших кредитных карт.',
+                                body2: 'Мы также показываем рекламу. Для оценки ее эффективности и показа релевантных объявлений мы собираем ваши рекламные идентификаторы (AAID/IDFA). Мы используем <strong>CAS.AI</strong> как платформу медиации рекламы, которая направляет запросы партнерам, включая AdMob, AppLovin, UnityAds и Yandex Ads.'
+                            },
+                            analytics: {
+                                title: '5. Аналитика и Отчеты об ошибках (Crashlytics)',
+                                body1: 'Мы используем Firebase Analytics и Firebase Crashlytics для мониторинга стабильности игры. В случае сбоя мы собираем автоматический отчет, содержащий состояние вашего устройства и трассировку стека. Эти данные используются исключительно для исправления ошибок и улучшения производительности.'
+                            },
+                            retention: {
+                                title: '6. Безопасность и хранение данных',
+                                body1: 'Весь сетевой трафик и хранимые данные зашифрованы. Поскольку многопользовательский прогресс, списки друзей и таблицы лидеров являются постоянными, ваш профиль и связанные с ним данные хранятся бессрочно, пока существует ваш аккаунт.'
+                            },
+                            deletion: {
+                                title: '7. Управление и удаление ваших данных',
+                                body1: 'Вы имеете полный контроль над своими данными. Вы можете запросить изменение или удаление данных следующими способами:',
+                                list1: '<strong>Полное удаление аккаунта (В игре):</strong> Вы можете нажать кнопку «Удалить аккаунт» в настройках игры. Это поместит ваш аккаунт в 7-дневную очередь на удаление. Если вы не отмените запрос в течение 7 дней, ваш аккаунт и все связанные с ним данные будут навсегда удалены.',
+                                list2: '<strong>Полное удаление аккаунта (Email):</strong> Вы можете написать нам напрямую, чтобы запросить ручное удаление вашего внутреннего аккаунта.',
+                                list3: '<strong>Частичное удаление данных:</strong> Если вы хотите сохранить свой аккаунт, но желаете удалить определенные данные (например, очистить историю чата или определенные внутренние логи), вы можете запросить это, связавшись с нашей службой поддержки.'
+                            },
+                            children: {
+                                title: '8. Конфиденциальность детей',
+                                body1: 'Данная игра не предназначена для детей младше 13 лет. Через наш первоначальный запрос возраста мы отключаем социальные функции для несовершеннолетних. Мы намеренно не собираем личную информацию от детей. Если вы считаете, что ребенок предоставил нам запрещенные личные данные, пожалуйста, свяжитесь с нами, чтобы мы могли немедленно их удалить.'
+                            },
+                            contact: {
+                                title: '9. Связаться с нами',
+                                body1: 'Если у вас есть какие-либо вопросы или запросы относительно ваших данных и настоящей Политики конфиденциальности, пожалуйста, свяжитесь с нами по адресу:'
+                            }
+                        }
+                    }
+                }
+            }
+        };
+
+        function localize() {
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                const val = key.split('.').reduce((o, i) => o ? o[i] : null, i18next.t(key, { returnObjects: true }));
+                // If it is a string directly from translation
+                if (typeof val === 'string') {
+                    el.innerHTML = val;
+                } else {
+                    // Fallback using i18next directly
+                    const directVal = i18next.t(key);
+                    if (directVal) el.innerHTML = directVal;
+                }
+            });
+        }
+
+        function setLangUI(lang) {
+            const thumb = document.getElementById('langThumb');
+            const thumbM = document.getElementById('langThumbMobile');
+            const isRU = lang && lang.startsWith('ru');
+
+            if (thumb) {
+                thumb.classList.toggle('right-1', !isRU);
+                thumb.classList.toggle('left-1', isRU);
+            }
+            if (thumbM) {
+                thumbM.classList.toggle('right-1', !isRU);
+                thumbM.classList.toggle('left-1', isRU);
+            }
+        }
+
+        function setUrlLangParam(lang) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('lang', lang);
+            window.history.replaceState({}, '', url);
+        }
+
+        function updateTitle() {
+            const ppTitle = i18next.t('pp.title') || 'Privacy Policy';
+            const gameTitle = i18next.t('gameTitle') || 'The Backrooms: Online';
+            document.title = `${ppTitle} - ${gameTitle}`;
+        }
+
+        function bindLangToggle(id) {
+            const btn = document.getElementById(id);
+            if (!btn) return;
+            btn.addEventListener('click', () => {
+                const newLang = (i18next.language || 'en').startsWith('ru') ? 'en' : 'ru';
+                i18next.changeLanguage(newLang, () => {
+                    localStorage.setItem('i18nextLng', newLang);
+                    document.documentElement.lang = newLang.startsWith('ru') ? 'ru' : 'en';
+                    localize();
+                    updateTitle();
+                    setLangUI(newLang);
+                    setUrlLangParam(newLang);
+                });
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            i18next.use(window.i18nextBrowserLanguageDetector).init({
+                resources, fallbackLng: 'en',
+                detection: { order: ['querystring', 'cookie', 'localStorage', 'navigator'], caches: ['localStorage', 'cookie'], lookupQuerystring: 'lang' }
+            }, () => {
+                const lang = i18next.language || 'en';
+                document.documentElement.lang = lang.startsWith('ru') ? 'ru' : 'en';
+                localize();
+                updateTitle();
+                setLangUI(lang);
+                bindLangToggle('langToggle');
+                bindLangToggle('langToggleMobile');
+                document.body.style.visibility = 'visible';
+            });
+        });
+    </script>
+</body>
+</html>
